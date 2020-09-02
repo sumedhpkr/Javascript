@@ -1,0 +1,129 @@
+:root {
+    --emp-white-color: #fff;
+    --emp-whitesmoke-color: #f5f5f5;
+    --emp-black-color: #000;
+    --emp-white-light-color: #e3d9d9;
+    --emp-grey-light-color: #9e9e9e;
+    --emp-grey-color: #808080;
+    --emp-blue-light-color: #607d8b;
+    --emp-green-light-color: #8BC34A;
+    --emp-red-color: red;
+    --emp-font-weight-600: 600;
+}
+
+table {
+    width: 100%;
+    border: 1px solid var(--emp-white-light-color);
+}
+
+thead td {
+    font-weight: var(--emp-font-weight-600);
+}
+
+tbody{
+    display:block;
+    width: 100%;
+    overflow: auto;
+    height: 400px;
+}
+
+td {
+    text-transform: capitalize;
+    padding: 5px;
+    text-align: left;
+    min-width: 100px;
+    max-width: 100px;
+    word-break: break-word;
+}
+
+tr {
+    display: block;
+    border-bottom: 1px solid var(--emp-white-light-color);
+}
+
+tbody tr:nth-child(odd) {
+    background: var(--emp-whitesmoke-color);
+}
+
+tbody tr:last-child {
+    border: 0;
+}
+
+input {
+    width: 100%;
+    height: 38px;
+    border: 1px solid var(--emp-white-light-color);
+    border-radius: 4px;
+    padding: 10px;
+}
+
+input:focus {
+    outline-color: var(--emp-gray-light-color);
+    transition: 0.5 all;
+}
+
+.form-group {
+    width: 46%;
+    display: inline-block;
+    margin: 15px 10px;
+}
+
+#employees {
+    margin: 5em;
+}
+
+#addEmployee {
+    width: 50%;
+    display: none;
+}
+
+.add-btn {
+    background: var(--emp-blue-light-color);
+    color: var(--emp-white-color);
+    padding: 10px;
+    display: inline-block;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 0;
+}
+
+.action-btn {
+    color: var(--emp-white-color);;
+    background: var(--emp-green-light-color);
+    padding: 5px;
+    font-size: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.action-btn-delete {
+    background: var(--emp-red-color);
+}
+
+/* short classes */
+.ml-0 {
+    margin-left: 0;
+}
+
+.mr-0 {
+    margin-right: 0;
+}
+
+.mr-1 {
+    margin-right: 0.5em;
+}
+
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}

@@ -1,0 +1,73 @@
+<html lang="en">
+    <head>
+        <title>Employee CRUD App</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="./employee.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="employees">
+            <h1>Employee CRUD App</h1>
+            <div id="addEmployee">
+                <form name="addEmployee" id="addEmployeeForm" method="post" onsubmit="addEmployeeSubmit(event)">
+                    <div class="form-group">
+                        <label>Job title</label>
+                        <input type="text" name="jobTitleName" autocomplete="empOff"/>
+                    </div>
+                    <div class="form-group">
+                        <label>First name</label>
+                        <input type="text" name="firstName" autocomplete="empOff"/>
+                    </div>
+                    <div class="form-group">
+                        <label>Last name</label>
+                        <input type="text" name="lastName" autocomplete="empOff"/>
+                    </div>
+                    <div class="form-group">
+                        <label>Preferred full name</label>
+                        <input type="text" name="preferredFullName" autocomplete="empOff"/>
+                    </div>
+                    <div class="form-group">
+                        <label>Employee code</label>
+                        <input type="text" name="employeeCode" autocomplete="empOff"/>
+                    </div>
+                    <div class="form-group">
+                        <label>Region</label>
+                        <input type="text" name="region" autocomplete="empOff"/>
+                    </div>
+                    <div class="form-group">
+                        <label>Date of birth</label>
+                        <input type="text" name="dob" autocomplete="empOff"/>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone number</label>
+                        <input type="text" name="phoneNumber" autocomplete="empOff"/>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="text" name="emailAddress" autocomplete="empOff"/>
+                    </div>
+                    <div>
+                        <div class="form-group">
+                            <div class="add-btn cancel-btn" onclick="showAddEmployeeForm('none')">Cancel</div>
+                            <button type="submit" class="add-btn">Add employee</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="searchEmployee" class="d-flex justify-content-between">
+                <div class="form-group ml-0">
+                    <input type="text" name="searchEmployee" autocomplete="empOff" placeholder="Search employee" onkeyup="searchEmployee(this.value)"/>
+                </div>
+                <div class="form-group mr-0 text-right">
+                    <div onclick="showAddEmployeeForm()" class="add-btn">Add new employee</div>
+                </div>
+            </div>
+            <table>
+                <thead id="employeesHeader"></thead>
+                <tbody id="employeesBody"></tbody>
+            </table>
+        </div>
+        <script src="./data.js"></script>
+        <script src="./employee.js"></script>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+CRUD Master
+Objective
+The objective of this exercise is to build a comprehensive data table based solution with basic CRUD operations.
+Acceptance criteria
+Fundamental understanding of the core concepts is key to build large scale systems. Consequently, We prefer you to implement the assignment using HTML, CSS, and Vanilla Javascript
+An allowed framework is Vue js if not comfortable with Vanilla Javascript
+Avoid using the readily available third party library or plugin that can provide the major functionality of the assignment
+We are very much interested in your object-oriented development and design skills, so please solve the problem keeping this in mind
+Application performance should be taken care
+Mock API should be Integrated, For CREATE/UPDATE/DELETE operation maintain data state at client side while making API request
+
+Feel free to showcase your design creativity beyond the design/flow/UX given in the mocks here.
+Bonus
+- Configurable data table
+- Reusable components for creating and update
+- CSS transitions/animations with UX design
+
+Detailed Specifications and requirements:
+At the end of this exercise, as an end-user he should be able to:
+Create an employee
+Read the data of a particular employee and all employees
+Update the details of the employee
+Delete a particular employee
+Read(All employees):
+The list of all the users should be presented in the form of a data table with pagination being server-side.
+API: GET https://my-json-server.typicode.com/darshanp40/employeedb/employees
+The API is fake so the candidate is expected to use local data for the requirements on top of the data provided by the API
+Bare minimum features expected in the datatable:
+A Basic table layout with complete data is displayed.
+Sortability - More than one column should be sortable, If possible display up/down arrows on click of the header to sort.
+Searching in the column - More than one column should be filterable, if possible have search input to filter on top of the filterable column.
+Fixed header: Headers should be fixed while scrolling the table, if the table goes beyond the viewport height. Fixing the header should also be configurable
+Pagination: Implement client-side pagination and keep the page size according to your configuration. Display next 5 pages no from the current page along with previous and next button in datatable
+All the features mentioned above should be driven by a configuration. As in everything should be configurable.
+
+
+
+-------
+
+arr= [2,3,4,1,5,6]
+output=[3,4,5,5,6,6]
+(edited)
+
+
+
+
+
+6:08
+3>2
+6:08
+then output is 3
+6:08
+3>4
+6:09
+then ouput is 4
+6:09
+1< 4
+6:09
+then output is next number which is greater than 4 that is 5
